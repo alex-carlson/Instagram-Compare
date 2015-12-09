@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Enter two keywords below and compare them
+
+block column
+  section.col
+    h2 Stuff
+    input(type="text" name="tag")
+    div.results
+      span= inst
