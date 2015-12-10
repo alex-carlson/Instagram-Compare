@@ -4,9 +4,24 @@ block content
   h1= title
   p Enter two keywords below and compare them
 
-block column
+block column1
   section.col
     h2 Stuff
-    input(type="text" name="tag")
+    input(type="text" name="tag1" placeholder="food")
     div.results
-      span= inst
+      ul
+        - var i = 0
+        for data in ret1
+          img(src="#{data.images.standard_resolution.url}")
+          p #{data.caption.text}
+
+block column2
+  section.col
+    h2 Stuff
+    input(type="text" name="tag2" placeholder="drink")
+    div.results
+      ul
+        - var i = 0
+        for data in ret2
+          img(src="#{data.images.standard_resolution.url}")
+          p #{data.caption.text}

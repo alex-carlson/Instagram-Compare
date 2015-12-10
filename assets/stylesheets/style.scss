@@ -27,7 +27,6 @@ html{
       width: 100%;
       border: 0;
       background-color: #f4f4f4;
-      text-align: left;
       font-size: 28px;
       padding: 5px;
       box-sizing: border-box;
@@ -37,6 +36,15 @@ html{
       background: #fafafa;
       border-top: solid 1px #000;
       padding: 20px;
+
+      ul{
+        img{
+          max-width: 100%;
+        }
+        p{
+          text-align: left;
+        }
+      }
     }
   }
 }
